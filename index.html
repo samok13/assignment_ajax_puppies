@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="timeago.js"></script>
+    <script src="puppies.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Poopies</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center">The AJAX Poopie Shelter</h1>
+
+      <h3 class="text-center">Register a new poopie</h3>
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <form id="puppy-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="breed">Breed</label>
+              <select id="breed" name="breed" class="form-control">
+                <option value="Collie">Collie</option>
+                <option value="Alien">Alien</option>
+                <option value="Rough">Rough</option>
+                <option value="Evil">Evil</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Register Poopie" class="btn btn-success">
+            </div>
+
+          </form>
+
+          <hr>
+          
+          <h4>Our Poopies</h4>
+          <div class="btn btn-default" id="refresh">Refresh poopies list</div>
+
+          <br>
+
+          <table class="table">
+            <thead>
+              <th>Name</th>
+              <th>Breed</th>
+              <th>Created At</th>
+              <th>Adopt</th>
+            </thead>
+            <tbody id="puppy-list">
+              <tr>
+                <td id="puppy-name">Fluffy</td>
+                <td id="puppy-breed">Doxin</td>
+                <td id="puppy-created">created 10 minutes ago</td>
+                <td id="puppy-adopt"><a href="#">Adopt</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
