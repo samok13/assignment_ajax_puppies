@@ -106,7 +106,7 @@ $(function() {
     var breed = $(this).find("#breed").val()
       var name = $(this).find("#name").val()
       console.log(breed, name);
-    Puppies.registerPuppy(name, breed)
+    Puppies.registerPuppy(name, breed);
       e.preventDefault();
   })
 
